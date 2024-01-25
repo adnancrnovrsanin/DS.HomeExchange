@@ -1,0 +1,6 @@
+@DS.HomeExchange.APIGateway_HostAddress = http://localhost:5291
+
+GET {{DS.HomeExchange.APIGateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

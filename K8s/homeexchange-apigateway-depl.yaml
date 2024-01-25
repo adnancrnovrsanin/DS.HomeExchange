@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: homeexchange-apigateway-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: homeexchange-apigateway
+  template:
+    metadata:
+      labels:
+        app: homeexchange-apigateway
+    spec:
+      containers:
+        - name: homeexchange-apigateway
+          image: adnancrnovrsanin/ds.apigate:latest
+          ports: 
+            - containerPort: 8080
+          env:
+            - name: Urls__Homes
+              value: "http://homeexchange-homes-srv:8080"
+            - name: Urls__Auth
+              value: "http://homeexchange-auth-srv:8080"
+            - name: Urls__HomeExchange
+              value: "http://homeexchange-homeexchange-srv:8080"
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: homeexchange-apigateway-srv
+spec:
+  type: ClusterIP
+  selector:
+    app: homeexchange-apigateway
+  ports:
+  - name: homeexchange-apigateway
+    protocol: TCP
+    port: 8080
+    targetPort: 8080
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: homeexchange-apigateway-srv
+spec:
+  type: LoadBalancer
+  selector:
+    app: homeexchange-apigateway
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080

@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: homeexchange-auth-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: homeexchange-auth
+  template:
+    metadata:
+      labels:
+        app: homeexchange-auth
+    spec:
+      containers:
+        - name: homeexchange-auth
+          image: adnancrnovrsanin/ds.auth:latest
+          env:
+            - name: DATABASE_URL
+              value: Server=postgres-clusterip-srv;Port=5432;Database=homeexchange;User Id=postgres;Password=password;
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: homeexchange-auth-srv
+spec:
+  type: ClusterIP
+  selector:
+    app: homeexchange-auth
+  ports:
+  - name: homeexchange-auth
+    protocol: TCP
+    port: 8080
+    targetPort: 8080

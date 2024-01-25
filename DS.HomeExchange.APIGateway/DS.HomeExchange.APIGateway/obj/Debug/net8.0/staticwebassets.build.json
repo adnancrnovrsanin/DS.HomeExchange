@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "m0snjSNEUvOjMzhwaVhb/FJalahaOj+DkS5PBM/2pD4=",
+  "Source": "DS.HomeExchange.APIGateway",
+  "BasePath": "_content/DS.HomeExchange.APIGateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
