@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\HomeExchange\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway.csproj": {}
+    "C:\\Users\\adnan\\Documents\\Projects\\DS.HomeExchange\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\HomeExchange\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway.csproj": {
+    "C:\\Users\\adnan\\Documents\\Projects\\DS.HomeExchange\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\HomeExchange\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway.csproj",
+        "projectUniqueName": "C:\\Users\\adnan\\Documents\\Projects\\DS.HomeExchange\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway.csproj",
         "projectName": "DS.HomeExchange.APIGateway",
-        "projectPath": "D:\\Projects\\HomeExchange\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway.csproj",
+        "projectPath": "C:\\Users\\adnan\\Documents\\Projects\\DS.HomeExchange\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway.csproj",
         "packagesPath": "C:\\Users\\adnan\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\HomeExchange\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway\\obj\\",
+        "outputPath": "C:\\Users\\adnan\\Documents\\Projects\\DS.HomeExchange\\DS.HomeExchange.APIGateway\\DS.HomeExchange.APIGateway\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

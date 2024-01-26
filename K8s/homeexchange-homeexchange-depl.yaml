@@ -18,6 +18,8 @@ spec:
           env:
             - name: DATABASE_URL
               value: Server=postgres-clusterip-srv;Port=5432;Database=homeexchange;User Id=postgres;Password=password;
+            - name: Urls__Homes
+              value: "http://homeexchange-homes-srv:8080"
 
 ---
 
